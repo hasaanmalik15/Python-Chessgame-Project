@@ -3,7 +3,7 @@
 
 ## Intro
 
-This coursework takes inspiration from chess, although it has significant differences with the standard [chess game](https://en.wikipedia.org/wiki/Chess). To reduce your workload, only the **bishop and king** pieces will be involved in play.  The game will be played between **Black** and **White**, as usual. However, the board size will be `S x S`, where `S`  is a number between `3` and `26`, instead of the usual `8 x 8`. (We only set the limit `26`  to avoid visualisation/printing problems for large boards and denotation.) Also, rather unusually, each side (Black or White) may play with any number of bishops in any positions, as long as they fit the board. E.g., there can be 5 black bishops on the board in a play. But, **each side has exactly one king**, as usual in chess. 
+This project takes inspiration from chess, although it has significant differences with the standard [chess game](https://en.wikipedia.org/wiki/Chess). To reduce your workload, only the **bishop and king** pieces will be involved in play.  The game will be played between **Black** and **White**, as usual. However, the board size will be `S x S`, where `S`  is a number between `3` and `26`, instead of the usual `8 x 8`. (We only set the limit `26`  to avoid visualisation/printing problems for large boards and denotation.) Also, rather unusually, each side (Black or White) may play with any number of bishops in any positions, as long as they fit the board. E.g., there can be 5 black bishops on the board in a play. But, **each side has exactly one king**, as usual in chess. 
 
 White starts the game, after which Black and White alternate by moving one of own pieces according to the usual chess rules, that are:
 
@@ -365,42 +365,3 @@ Those following functions/methods are exempt from testing due to their particula
 - `save_board`
 - `find_black_move`
 - `main`
-
-
-
-## Development and Submission
-
-You are expected to work on the coursework in your assigned *GitHub* repository. You must create commits, with messages, that describe the history of the development of your project. **It is required to have at least 5 commits reflecting sufficiently different development stages.** (Typically students have many more.) You will lose marks if you do not meet this requirement. The use of other features of git, e.g., branches, is optional and does not contribute to your mark.
-
-### Submission
-
-The files of the final version of your project must be placed in the designated project on Codio. We require the following files (see section Software specification) in your submission directory:
-
-- `chess_puzzle.py`
-- `test_chess_puzzle.py`
-
-and any other files or directories that are needed for them to run. To locate your submission directory for marking, we will look for a directory containing the two files above. If there is more than one such directory, one of them must be named `submission` and this is the one we will use for marking. (If you develop your project outside of Codio, you can simply clone it to the Codio project before the submission.)
-
-> Note: by the deadline of coursework submission, you must have both:
-> 
-> - the GitHub repo with the final version of your coursework (and history)
-> - the code in the project on Codio
-> 
-> Both entries contribute to your mark. 
-
-You are required to check, in particular, if you develop your project outside of Codio, that your system works as you expect by running `python chess_puzzle.py` in your submission directory of the project on Codio. **Your submission will be marked 'as is' using the same Codio set up as your project. It is your responsibility to check that your submission runs on Codio as you expect it.**
-
-### Additional Libraries
-
-You can use *any standard Python libraries available via pip for Python 3.10* in your implementation. If you do, you must make sure they are installed in your Codio project and your implementation runs on Codio as expected. (You can install them using `pip install ...` command in Terminal. You can request admin permissions if necessary using `sudo` command; see Linux documentation.)
-
-## Marking
-
-Your mark will be determined according to the following rubric:
-
-|Category| Weight | full | 3/4 | 1/2 | 1/4 | 0 |
-|--|--|--|--|--|--|--|
-| **Requirements** (*completeness* = system responds to all use scenarios; *correctness* = all responses are as expected) | 40% | Correct and complete | Correct and mostly complete | Mostly correct and mostly complete | Either mostly incorrect and mostly complete, or mostly incomplete and mostly correct | Either fully incorrect, or fully incomplete, or mostly incorrect and mostly incomplete |  
-| **Specification** (*completeness* = all required parts (functions, classes, etc.) are present; *correctness* = their implementation is correct (including data types) | 35% |Correct and complete | Correct and mostly complete | Mostly correct and mostly complete | Either mostly incorrect and mostly complete, or mostly incomplete and mostly correct | Either fully incorrect, or fully incomplete, or mostly incorrect and mostly incomplete |
-| **Validation** (*completeness* = appropriate variety of scenarios are verified; *correctness* = tests for them are correctly written) | 15% | Correct and complete | Correct and mostly complete | Mostly correct and mostly complete | Either mostly incorrect and mostly complete, or mostly incomplete and mostly correct | Either fully incorrect, or fully incomplete, or mostly incorrect and mostly incomplete |
-| **Development style** (*well-structured code* = visual readability and non-redundancy (see Software Specification); *commit history* = several commits reflecting various stages of development (see Development and Submission)) | 10% | Well-structured code and excellent commit history | Well-stuctured code and good commit history | Nearly well-structured code and good commit history | Not well-structured code or poor commit history | Not well-structured code and poor commit history |
