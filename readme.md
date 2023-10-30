@@ -353,7 +353,6 @@ def main() -> None:
     ...
     '''    
 ```
-[^1]: You may note that the methods `can_reach`, `can_move` and `move_to` as well as the constructor, could be naturally declared in the class `Piece`, because every piece in our program must have them. This would require the use of so called abstract classes, which are not naturally present in Python, but can be added using the `ABC` library. You can add this feature to your program, as an optional excercise not contributing to your mark.
 
 ## Validation
 
